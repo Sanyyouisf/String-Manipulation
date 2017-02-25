@@ -1,0 +1,22 @@
+.text {
+  width: 300px;
+}
+
+.btn {
+  border-radius: .8;
+  border: 2px solid black;
+  color: white;
+  padding: 15px 15px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+#outputString {
+  font-size: 20px;
+  color: blue;
+}
+
+
+
+
