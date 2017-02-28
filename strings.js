@@ -1,6 +1,3 @@
-
-
-
 var inputString = document.getElementById("inputString");
 var outputString = document.getElementById("outputString");
 var btnString = document.getElementById("btnString");
@@ -12,28 +9,32 @@ function reversal(string) {
 }
 
 //function to sort the string
-// and add it to the Dom with new line 
+// and add it to the DOM with new line 
 function alphabits(string) {
 	outputString.innerHTML+= '<p>'+" the characters in alphabetical order are :   "
 							      + string.split('').sort().join('') +'</p>';
 }
 
-
-function palindrome() {
-	
-}
-
+// function palindrome(inputString) {
+// 	if (var outputString === reversal(inputString));{
+// 		outputString.innerHTML+= '<p>'+" Your string is a palidrome :   "
+// 							  + inputString === reversal(input)'</p>';
+// 	}
+// }
 
 // event listener for the button click 
 btnString.addEventListener("click", function() {
 	reversal(inputString.value);
 	alphabits(inputString.value);
+	palindrome(inputString.value);
 });
 
 // event for clicking the enter button in kb 
 inputString.addEventListener("keypress",
-		function(event){
-			if (event.keyCode === 13){
-				reversal(inputString.value);
-				alphabits(inputString.value);}
-			});
+	function(event){
+		if (event.keyCode === 13){
+			reversal(inputString.value);
+			alphabits(inputString.value);
+			palindrome(inputString.value);
+		}
+		});
