@@ -6,21 +6,20 @@ var btnString = document.getElementById("btnString");
 function reversal(string) {
 	outputString.innerHTML= '<p>'+" the reverses order of the characters are :   "
 								 + string.split('').reverse().join('')+'</p>';
-}
+};
 
 //function to sort the string
 // and add it to the DOM with new line 
 function alphabits(string) {
 	outputString.innerHTML+= '<p>'+" the characters in alphabetical order are :   "
 							      + string.split('').sort().join('') +'</p>';
-}
+};
 
-// function palindrome(inputString) {
-// 	if (var outputString === reversal(inputString));{
-// 		outputString.innerHTML+= '<p>'+" Your string is a palidrome :   "
-// 							  + inputString === reversal(input)'</p>';
-// 	}
-// }
+function palindrome(string){
+	if (string === string.split('').reverse().join('') ){
+		outputString.innerHTML+= '<p>'+" Your string is a palidrome :  " + string+ '</p> ' ;
+	}
+};
 
 // event listener for the button click 
 btnString.addEventListener("click", function() {
